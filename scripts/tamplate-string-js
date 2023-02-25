@@ -1,0 +1,18 @@
+const line = 'this is a new line' + 'this is another line' + 'this is other line'
+// console.log(line)
+
+// (\n) creates another line
+const line2 = 'this is a new line \n' + 'this is another line \n' + 'this is other line \n'
+console.log(line2)
+
+//(``) backtick makes it easy
+const line3 = `this is a new line 
+this is another line
+this is other line`
+console.log(line3)
+
+
+const a= 5
+const b= 4
+const result = `sum of ${a} and ${b} is ${a+b}`
+console.log(result)
