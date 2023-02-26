@@ -28,17 +28,29 @@ function mealdata(meals) {
     </div>`
 
         divRow.appendChild(div)
+        console.log(meals)
     }
 
-
+loadSpiner(false)
 }
 
 
 function getinputdata() {
+    loadSpiner(true)
     const inputField = document.getElementById('inputfield')
     const inputdata = inputField.value
     loadMeal(inputdata)
 
+}
+
+function loadSpiner(isloading){
+    const loader = document.getElementById('loader')
+    if(isloading){
+       loader.classList.remove('d-none')
+    }
+    else{
+        loader.classList.add('d-none')
+    }
 }
 
 function loadmealdetailid(mealdetailsid) {
